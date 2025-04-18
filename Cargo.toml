@@ -1,0 +1,20 @@
+[package]
+name = "rustysnake"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "rustysnake"
+path = "src/lib.rs"
+
+
+[dependencies]
+speedy2d = "2.1.0"
+rand = "0.8"
+getrandom = { version = "0.2", features = ["js"] }
+
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+
